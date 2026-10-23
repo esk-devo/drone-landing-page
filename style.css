@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 9%;
+    background-color: #f4f0ff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #8b52ff;
+    border-radius: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 16px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #8b52ff;
+    border-bottom-color: #8b52ff;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 9%;
+}
+
+.hero-content,
+.hero-image {
+    flex: 1;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: #a47bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #8b52ff;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.new-price {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 22px;
+    text-decoration: line-through;
+}
+
+.save {
+    background-color: #ffe3e3;
+    color: #d90000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.installments {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-primary {
+    background-color: #8b52ff;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #7436e8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(139, 82, 255, 0.35);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #2b2b2b;
+    border: 2px solid #e5e5e5;
+}
+
+.btn-secondary:hover {
+    border-color: #8b52ff;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    position: relative;
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    background-color: #8b52ff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
